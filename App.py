@@ -103,10 +103,10 @@ if uploaded_file is not None:
     predicted_index = np.argmax(prediction, axis=1)[0]
     
     # Get the corresponding species name
-    predicted_species = species_names[predicted_index]
+    predicted_seedling = Seedling_Names[predicted_index]
     
     # Display the prediction
-    st.markdown(f'<div class="prediction">Prediction: {predicted_species}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="prediction">Prediction: {predicted_seedling}</div>', unsafe_allow_html=True)
 
 
 
